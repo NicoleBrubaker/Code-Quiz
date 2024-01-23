@@ -21,9 +21,8 @@ This is a work in progress, and I have some ideas for the future to build it out
 
 Overall I'm very happy with how this has turned out in a short amount of time, and look forward to see it evolve more.
 
+![Home Page](assets/images/image-3.png)
 
-![Home Page](image.png)
+![Quiz Question](assets/images/image-4.png)
 
-![Quiz Question](image-1.png)
-
-![Game Over Page](image-2.png)
+![Game Over Page](assets/images/image-5.png)

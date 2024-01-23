@@ -2,6 +2,8 @@
 * {
   text-align: center;
   margin: 0;
+  font-family: "Courgette", cursive;
+  font-family: "Noto Serif", serif;
 }
 
 /* Element based stylings */
@@ -26,19 +28,28 @@ h1 {
   color: #2b9484;
   text-align: center;
   font-size: 42px;
+  line-height: 45px;
 }
 
 h2 {
   margin-bottom: 40px;
   color: #0c5e51;
-    text-align: center;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+h3 {
+  line-height: 25px;
+  font-size: 18px;
 }
 
 p {
   max-width: 40%;
   margin-inline: auto;
   font-size: 17px;
-  padding: 15px
+  padding: 15px;
+  line-height: 21px;
 }
 
 button {
@@ -51,7 +62,7 @@ button {
   display: inline-block;
   font-size: 16px;
   margin: 20px;
-  width: 200px;
+  width: 210px;
 }
 
 button:hover {
@@ -66,12 +77,15 @@ input {
 }
 
 /* Each seperate answer option button  */
-#answer-button-a, #answer-button-b, #answer-button-c, #answer-button-d {
+#answer-button-a,
+#answer-button-b,
+#answer-button-c,
+#answer-button-d {
   display: none;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
-} 
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
 
 /* Game Over page to be hidden by default, until called */
 #endPgText {
