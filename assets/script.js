@@ -1,3 +1,4 @@
+// List of all query selectors from HTML file
 var timeRemaining = document.querySelector("#countdown");
 var startQuizButton = document.querySelector("#start-button");
 var homePgText = document.querySelector("#homePgText");
@@ -97,7 +98,8 @@ startQuizButton.addEventListener("click", function () {
 // Declared globally as it is used in multiple functions
 var timeLeft = 70;
 var timeInterval;
-// This function sets the time interval to seconds, timer starts at 75 seconds and displays text content to the screen. Time decreases by 1 each second.
+
+// This function sets the time interval to seconds, timer starts at 70 seconds and displays text content to the screen. Time decreases by 1 each second.
 var countdown = function () {
   timeInterval = setInterval(function () {
     if (timeLeft === 0) {
@@ -114,13 +116,14 @@ var countdown = function () {
   }, 1000);
 };
 
-// Hides the home page text and start quiz buttons when start quiz is clicked.
+// When Start Quiz is clicked, all home page text elements are hidden, question elements appear
 var startQuiz = function () {
   startQuizButton.style.display = "none";
   homePgText.style.display = "none";
   showQuizQuestions();
 };
 
+// Variable to give current question to 0, then increment by one below in the event listener
 var currentQuestion = 0;
 
 // If any answer button is clicked, the listeners will check if it was the correct answer, and the next question will show
@@ -193,13 +196,14 @@ var completeQuiz = function () {
   finalScore();
 };
 
+// Showing leader board page when button is clicked
 var leaderBoardPg = function () {
     highScorePg.style.display = "block";
 }
-
+// Event listener to trigger user intials save to local storage and display leader board page, with new information displayed
   saveScoreButton.addEventListener("click", function () {
     var initials = initialsInput.value;
-
+// If user does not enter initials, an alert will pop up requiring a value input
     if (initials) {
       localStorage.setItem("userInitials", initials);
       leaderBoardPg();

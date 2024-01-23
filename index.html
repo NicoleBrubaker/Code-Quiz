@@ -4,10 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./assets/" />
+    <!-- Reset style file and custom css files -->
+    <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
+  <!-- Nav and home page text -->
   <body>
     <nav>
       <ul>
@@ -25,10 +27,12 @@
 </p>
 </div>
 
+<!-- Start Quiz button on home page -->
 <button id="start-button">
     <h3>Start Quiz</h3>
 </button>
 
+<!-- Question title and answer buttons, reused for each question -->
 <section>
 
 <h2 id="question-title"></h2>
@@ -43,6 +47,7 @@
 
 </section>
 
+<!-- Game Over page text, user score, initial input field, and submit to leader board button -->
 <div id="endPgText">
 <h1>Awesome job!</h1>
 <h2>You're all done.</h2>
@@ -54,6 +59,7 @@
 </button>
 </div>
  
+<!-- Leader board page text, and 3 top score list items to be displayed -->
 <div id="highScorePg">
   <h1>Leader Board</h1>
   <ul>
@@ -63,6 +69,7 @@
   </ul>
 </div>
 
+<!-- Javascript file -->
 <script src="./assets/script.js"></script>
   </body>
 
