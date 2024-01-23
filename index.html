@@ -8,17 +8,60 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-  <br>
-<h1>Let's test your coding knowledge!</h1>
+  <body>
+    <nav>
+      <ul>
+        <li>View High Scores</li>
+        <li id="countdown">Time Remaining</li>
+        </ul>
+    </nav>
+    <div id="homePgText">
+<h1>Coding Quiz</h1>
+<h2>Let's test your knowledge!</h2>
 <p>
-    Click "Start Quiz" to test your knowledge on all things HTML, CSS, and Javascript. Good luck!
+    Click "Start Quiz" to test your knowledge on all things HTML, CSS, and Javascript. 
+    This is a timed quiz. You will be given 70 seconds to complete all questions. 
+    Be aware, answering questions incorrectly will penalize you by 5 seconds! Good luck!
 </p>
-
-
-<div class="button">
-    <h3>Start Quiz</h3>
 </div>
 
+<button id="start-button">
+    <h3>Start Quiz</h3>
+</button>
+
+<section>
+
+<h2 id="question-title"></h2>
+<button id="answer-button-a">
+</button>
+<button id="answer-button-b">
+</button>
+<button id="answer-button-c">
+</button>
+<button id="answer-button-d">
+</button>
+
+</section>
+
+<div id="endPgText">
+<h1>Awesome job!</h1>
+<h2>You're all done.</h2>
+<p id="user-score"></p>
+<h3>Enter your initials: </h3>
+<input type="text" id="initialsInput" placeholder="Your Initials" maxlength="3">
+<button id="saveScoreButton">
+  <h3>Submit</h3>
+</button>
+</div>
+ 
+<div id="highScorePg">
+  <h1>High Score Board</h1>
+  <ul>
+    <li id="score-one"></li>
+    <li id="score-two"></li>
+    <li id="score-three"></li>
+  </ul>
+</div>
 
 <script src="./assets/script.js"></script>
   </body>

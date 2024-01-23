@@ -3,20 +3,77 @@
   margin: 0;
 }
 
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+
+ul {
+  margin: 15px;
+  padding: 5px;
+}
+
+li {
+  list-style-type: none;
+}
+
 h1 {
+  margin-top: 60px;
+  color: #2b9484;
+  text-align: center;
+  font-size: 42px;
+}
+
+h2 {
+  margin-bottom: 40px;
+  color: #0c5e51;
     text-align: center;
 }
 
-.button {
-  background-color: #006d5d; /* Green */
+p {
+  max-width: 40%;
+  margin-inline: auto;
+  font-size: 17px;
+  padding: 15px
+}
+
+button {
+  background-color: #2b9484;
   border: none;
   color: white;
-  padding: 15px 25px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px;
+  margin: 20px;
+  width: 200px;
 }
 
+input {
+  display: block;
+  margin-inline: auto;
+  padding: 3px;
+  border-color: #2b9484;
+}
 
+button:hover {
+  background-color: #0c5e51;
+}
+
+#answer-button-a, #answer-button-b, #answer-button-c, #answer-button-d {
+  display: none;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+} 
+
+#endPgText {
+  display: none;
+}
+
+#highScorePg {
+  display: none;
+}
