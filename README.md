@@ -21,6 +21,10 @@ This is a work in progress, and I have some ideas for the future to build it out
 
 Overall I'm very happy with how this has turned out in a short amount of time, and look forward to see it evolve more.
 
+Github Repo: https://github.com/NicoleBrubaker/Code-Quiz
+
+Live Site: https://nicolebrubaker.github.io/Code-Quiz/ 
+
 ![Home Page](assets/images/image-3.png)
 
 ![Quiz Question](assets/images/image-4.png)
